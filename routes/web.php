@@ -12,8 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/characters', function () {
+    return view('characters');
+})->name('characters');
 
 Route::get('/', function () {
     $products = config('db');
     return view('index', compact('products'));
-});
+})->name('products');
