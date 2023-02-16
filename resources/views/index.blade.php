@@ -34,12 +34,12 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        @foreach($products as $product)
+                        @foreach($cards as $card)
                         <div class="album-card">
                             <div class="card-img">
-                                <img src="{{$product['thumb']}}" alt="">
+                                <img src="{{$card['thumb']}}" alt="">
                             </div>
-                            <h3>{{$product['title']}}</h3>  
+                            <h3>{{$card['title']}}</h3>  
                         </div>
                         
                         @endforeach

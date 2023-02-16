@@ -17,6 +17,9 @@ Route::get('/characters', function () {
 })->name('characters');
 
 Route::get('/', function () {
-    $products = config('db');
-    return view('index', compact('products'));
-})->name('products');
+    $cards = config('db.cards');
+    $icon = config('db.icon');
+    $social = config('db.social');
+
+    return view('index', compact('cards', 'icon', 'social'));
+})->name('homepage');
