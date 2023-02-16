@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col">
                     <ul>
-                        <li>DC POWER VISA</li>
+                        <li>DC POWER&#153; VISA&#174;</li>
                         <li>ADDITIONAL DC SITES</li>
                     </ul>
                 </div>
@@ -55,6 +55,9 @@
                     </li>
                     <li class="p-3 {{ Route::currentRouteName() == 'shop' ? 'active' : ''}}">
                         <a href="">Shop</a>
+                    </li>
+                    <li class="p-3">
+                        <input type='text' placeholder="Search">
                     </li>
                 </ul>
             </nav>

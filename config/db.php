@@ -217,41 +217,41 @@ return [
     ],
     'icon'=>[
         [
-            "label"=> 'buy-comics-digital-comics.png',
+            "label"=> 'resources/img/buy-comics-digital-comics.png',
             "description"=> 'DIGITAL COMICS'
         ],
         [
-            "label"=> 'buy-comics-merchandise.png',
+            "label"=> 'resources/img/buy-comics-merchandise.png',
             "description"=> 'DC MERCHANDISE'
         ],
         [
-            "label"=> 'buy-comics-subscriptions.png',
+            "label"=> 'resources/img/buy-comics-subscriptions.png',
             "description"=> 'SUBSCRIPTION'
         ],
         [
-            "label"=> 'buy-comics-shop-locator.png',
+            "label"=> 'resources/img/buy-comics-shop-locator.png',
             "description"=> 'COMIC SHOP LOCATOR'
         ],
         [
-            "label"=> 'buy-dc-power-visa.svg',
+            "label"=> 'resources/img/buy-dc-power-visa.svg',
             "description"=> 'DC POWER VISA'
         ],
     ],
     'social'=> [
         [
-            "logo"=> 'footer-facebook.png',
+            "logo"=> 'resources/img/footer-facebook.png',
         ],
         [
-            "logo"=> 'footer-periscope.png',
+            "logo"=> 'resources/img/footer-twitter.png',
         ],
         [
-            "logo"=> 'footer-pinterest.png',
+            "logo"=> 'resources/img/footer-youtube.png',
         ],
         [
-            "logo"=> 'footer-twitter.png',
+            "logo"=> 'resources/img/footer-pinterest.png',
         ],
         [
-            "logo"=> 'footer-youtube.png',
+            "logo"=> 'resources/img/footer-periscope.png',
         ],
     ]
 ];
