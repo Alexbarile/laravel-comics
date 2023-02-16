@@ -1,0 +1,52 @@
+@import '../partials/mixins';
+@import '../partials/variables.scss';
+
+
+// HEADER
+
+.bg-blue {
+    width: 100%;
+    background-color: $blue;
+
+    ul {
+        @include flex;
+        @include j-end;
+        @include a-center;
+        margin: 0;
+        padding: 0;
+
+        li {
+            list-style-type: none;
+            color: white;
+            font-size: 12px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+}
+
+header {
+    width: 100%;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            @include listUp;
+
+            a {
+                text-decoration: none;
+                color: $black;
+
+                &.active,
+                &:hover {
+
+                    color: $blue;
+                    border-bottom: 5px solid $blue;
+                    padding-bottom: 40px;
+                }
+            }
+        }
+    }
+}

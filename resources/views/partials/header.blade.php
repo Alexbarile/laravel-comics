@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="container mt-3 mb-3">
+    <div class="container mt-3 mb-2">
         <div class="row d-flex justify-content-between align-items-center">
     
             <!-- logo -->

@@ -11,6 +11,11 @@
 <body>
     @include('partials.header')
     <main>
+        <!-- jumbotron -->
+
+        <div class="jumbo">
+        </div>
+        
         @foreach($products as $product)
         <img src="{{$product['thumb']}}" alt="">
         <h1>{{$product['title']}}</h1>
