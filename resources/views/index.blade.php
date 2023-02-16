@@ -9,8 +9,14 @@
 </head>
 
 <body>
-
-    
+    @include('partials.header')
+    <main>
+        @foreach($products as $product)
+        <img src="{{$product['thumb']}}" alt="">
+        <h1>{{$product['title']}}</h1>
+        @endforeach
+    </main>
+    @include('partials.footer')
 </body>
 
 </html>
