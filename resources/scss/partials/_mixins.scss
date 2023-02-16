@@ -18,6 +18,9 @@
     align-items: center;
 }
 
+@mixin wrap {
+    flex-wrap: wrap;
+}
 
 @mixin listUp {
     list-style-type: none;
