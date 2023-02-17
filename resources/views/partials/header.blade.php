@@ -30,7 +30,7 @@
                         <a href="{{ route('characters')}}">Characters</a>
                     </li>
                     <li class="p-3 {{ Route::currentRouteName() == 'comics' ? 'active' : ''}}">
-                        <a href="">Comics</a>
+                        <a href="{{ route('comics')}}">Comics</a>
                     </li>
                     <li class="p-3 {{ Route::currentRouteName() == 'movies' ? 'active' : ''}}">
                         <a href="">Movies</a>

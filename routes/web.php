@@ -12,9 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// CHARACTERS
+
 Route::get('/characters', function () {
     return view('characters');
 })->name('characters');
+
+// COMICS
+
+Route::get('/comics', function () {
+    $comics = config('db.cards');
+    return view('comics', compact('comics'));
+})->name('comics');
+
+// HOMEPAGE
 
 Route::get('/', function () {
     $cards = config('db.cards');
