@@ -26,6 +26,16 @@ Route::get('/comics', function () {
     return view('comics', compact('comics'));
 })->name('comics');
 
+Route::get('/comics/{titolo}', function ($titolo) {
+    $comics = config('db.cards');
+    foreach($comics as $comic){
+        if($comic['titolo'] == $titolo){
+            $single = $comic;
+        }
+    }
+    return view('detail_comics', compact('single'));
+})->name('detail-comics');
+
 // HOMEPAGE
 
 Route::get('/', function () {
