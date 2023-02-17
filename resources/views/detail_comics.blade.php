@@ -1,4 +1,9 @@
-@extends('layouts.app');
-@section('title', 'Comics');
+@extends('layouts.app')
+@section('title', 'Details | Comics')
 
-@section('content');
+@section('content')
+{{print_r($single)}}
+
+
+@endsection
+

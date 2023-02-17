@@ -1,6 +1,6 @@
 <footer>
 
-    <!-- prima parte footer -->
+    {{-- prima parte footer --}}
 
     <div class="bg-blu">
         <div class="container">
@@ -21,13 +21,13 @@
         </div>
     </div>
 
-    <!-- seconda parte footer -->
+    {{-- seconda parte footer --}}
 
     <div class="jumbo-2">
         <div class="container">
             <div class="row">
 
-                <!-- link -->
+                {{-- link --}}
 
                 <div class="col">
                     <div class="d-flex">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <!-- logo grande -->
+                {{-- logo grande --}}
 
                 <div class="col">
                     <!-- img messa in bg-imgae -->
@@ -89,19 +89,19 @@
         </div>
     </div>
 
-    <!-- terza parte footer -->
+    {{-- terza parte footer --}}
 
     <div class="social">
         <div class="container">
             <div class="row">
 
-                <!-- button -->
+                {{-- button --}}
 
                 <div class="col">
                     <button><a href="#"> Sign-Up Now!</a></button>
                 </div>
 
-                <!-- loghi social -->
+                {{-- loghi social --}}
 
                 <div class="col d-flex justify-content-end">
                     <ul>

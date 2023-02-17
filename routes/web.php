@@ -21,19 +21,16 @@ Route::get('/characters', function () {
 
 // COMICS
 
-Route::get('/comics', function () {
+Route::get('/comics/{id}', function ($id) {
     $comics = config('db.cards');
-    return view('comics', compact('comics'));
-})->name('comics');
-
-Route::get('/comics/{titolo}', function ($titolo) {
-    $comics = config('db.cards');
-    foreach($comics as $comic){
-        if($comic['titolo'] == $titolo){
+    $icon = config('db.icon');
+    $social = config('db.social');
+    foreach($comics as $key => $comic){
+        if($key == $id){
             $single = $comic;
         }
     }
-    return view('detail_comics', compact('single'));
+    return view('detail_comics', compact('single', 'icon', 'social'));
 })->name('detail-comics');
 
 // HOMEPAGE

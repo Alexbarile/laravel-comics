@@ -14,7 +14,7 @@
     <div class="container mt-3 mb-2">
         <div class="row d-flex justify-content-between align-items-center">
     
-            <!-- logo -->
+            {{-- logo --}}
     
             <div class="col">
                 <a href="#" class="logo">
@@ -22,7 +22,7 @@
                 </a>
             </div>
     
-            <!-- navbar -->
+            {{-- navbar --}}
     
             <nav class="col">
                 <ul class="d-flex">
@@ -30,7 +30,7 @@
                         <a href="{{ route('characters')}}">Characters</a>
                     </li>
                     <li class="p-3 {{ Route::currentRouteName() == 'comics' ? 'active' : ''}}">
-                        <a href="{{ route('homepage')}}">Comics</a>
+                        <a href="">Comics</a>
                     </li>
                     <li class="p-3 {{ Route::currentRouteName() == 'movies' ? 'active' : ''}}">
                         <a href="">Movies</a>
@@ -62,5 +62,10 @@
                 </ul>
             </nav>
         </div>
+    </div>
+
+    {{-- jumbotron --}}
+
+    <div class="jumbo">
     </div>
 </header>
