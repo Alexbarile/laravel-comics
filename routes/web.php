@@ -21,7 +21,7 @@ Route::get('/characters', function () {
 
 // COMICS
 
-Route::get('/comics/{id}', function ($id) {
+Route::get('/comics/{id}', function ($id) {    
     $comics = config('db.cards');
     $icon = config('db.icon');
     $social = config('db.social');
@@ -29,8 +29,19 @@ Route::get('/comics/{id}', function ($id) {
         if($key == $id){
             $single = $comic;
         }
+
+    // altro metodo con USE
+
+    // $comics = config('db.cards');
+    // $icon = config('db.icon');
+    // $social = config('db.social');
+    // $single = array_filter($comics, function($item) use($id)){
+    //     return $item['id'] == $id
+    // }
+
+
     }
-    return view('detail_comics', compact('single', 'icon', 'social'));
+    return view('detail_comics', compact('comics', 'icon', 'social', 'single'));
 })->name('detail-comics');
 
 // HOMEPAGE
