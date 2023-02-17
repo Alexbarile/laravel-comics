@@ -12,12 +12,20 @@
                 <h2>{{($single['title'])}}</h2>
             </div>
             <div class="my-container">
-                <div class="row">
-                    <div class="col">
-                        <p>U.S. Price: <span>{{($single['price'])}}</span></p>
+                <div class="row d-flex align-items-center">
+
+                    <div class="col-70">
+                        <div class="row-mini d-flex">
+                            <div class="col d-flex">
+                                <p>U.S. Price: </p><span>{{($single['price'])}}</span>
+                            </div>
+                            <div class="col d-flex justify-content-end">
+                                <p>AVAILABLE</p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <p>AVAILABLE</p>
+                    <div class="col-30 d-flex justify-content-center">
+                        <span>Check Availability</span>
                     </div>
                 </div>
             </div>
