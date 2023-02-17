@@ -26,7 +26,7 @@
          {{-- DX PART --}}
 
         <div class="col d-flex justify-content-center">
-            <div class="content d-flex flex-column">
+            <div class="content">
                 <div class="d-flex justify-content-end">
                     <h5>advertisement</h5>
                 </div>
