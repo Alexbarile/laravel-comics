@@ -20,7 +20,7 @@
                         <div class="card-img">
                             <img src="{{$card['thumb']}}" alt="">
                         </div>
-                        <h3>{{$card['title']}}</h3>  
+                        <h3>{{$card['series']}}</h3>  
                     </a>
                 </div>
                 @endforeach

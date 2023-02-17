@@ -2,7 +2,7 @@
 @section('title', 'Details | Comics')
 
 @section('content')
-{{print_r($single)}}
+<h2>{{($single['series'])}}</h2>
 
 
 @endsection
