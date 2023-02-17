@@ -1,0 +1,30 @@
+@import '../partials/mixins';
+@import '../partials/variables.scss';
+
+.container {
+
+    // SX PART
+
+    .col {
+        h2 {
+            text-transform: uppercase;
+        }
+
+        .my-container {
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    // DX PART
+
+    .col {
+        .content {
+            h5 {
+                text-transform: uppercase;
+            }
+        }
+    }
+}
