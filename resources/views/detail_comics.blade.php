@@ -95,7 +95,6 @@
                     </div>
                 </div>
             </div>
-    
             <div class="col">
                 <div>
                     <h4>Specs</h4>

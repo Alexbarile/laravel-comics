@@ -1,5 +1,5 @@
 <header>
-    <div class="bg-blue">
+    <div class="up-header">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -17,7 +17,7 @@
             {{-- logo --}}
     
             <div class="col">
-                <a href="#" class="logo">
+                <a href="/" class="logo">
                     <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="DC">
                 </a>
             </div>
