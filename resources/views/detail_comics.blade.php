@@ -3,6 +3,24 @@
 
 @section('content')
 
+{{-- IMG COMIC --}}
+
+<div class="bg-blue">
+    <div class="container">
+        <div class="row p-5">
+            <div class="col">
+                <div class="card-img">
+                    <img src="{{$single['thumb']}}" alt="">
+                    <p class="type">{{$single['type']}}</p>
+                    <a href="#null">
+                        <p>View Gallery</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {{-- SCHEDA COMIC --}}
 
 <div class="container">
@@ -95,7 +113,7 @@
                         <p>U.S. Price:</p> 
                     </div>
                     <div class="col-70">
-                        <a href="#"> {{($single['price'])}}</a>
+                        <p>{{($single['price'])}}</p>
                     </div>
                 </div>
                 <div class="second-line d-flex justify-content-between align-self-baseline">
@@ -103,7 +121,7 @@
                         <p>On Sale Date:</p> 
                     </div>
                     <div class="col-70">
-                        <a href="#"> {{($single['sale_date'])}}</a>
+                        <p>{{($single['sale_date'])}}</p>
                     </div>
                 </div>
             </div>

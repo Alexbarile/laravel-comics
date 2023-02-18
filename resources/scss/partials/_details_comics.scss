@@ -1,6 +1,52 @@
 @import '../partials/mixins';
 @import '../partials/variables.scss';
 
+// IMG COMIC
+
+.bg-blue {
+    width: 100%;
+    margin: 0 auto;
+    height: 80px;
+    background-color: $blue;
+
+    .row {
+
+        .col {
+            .card-img {
+                position: relative;
+
+                img {
+                    position: absolute;
+                    bottom: -10px;
+                    border: 1px solid white;
+                }
+
+                .type {
+                    position: absolute;
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $azure;
+                    bottom: 242px;
+                    left: 1px;
+                    padding: 0px 6px 0px 6px;
+                }
+
+                a {
+                    p {
+                        position: absolute;
+                        text-transform: uppercase;
+                        color: $white;
+                        background-color: $azure;
+                        bottom: -25px;
+                        left: 1px;
+                        padding: 0px 39px 0px 41px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 // SCHEDA COMIC
 
 .container {
@@ -104,6 +150,11 @@
 
                 a {
                     text-decoration: none;
+                    color: $azure;
+
+                    &:hover {
+                        color: $blue;
+                    }
                 }
             }
         }
