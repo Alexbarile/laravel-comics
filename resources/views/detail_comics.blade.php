@@ -19,7 +19,7 @@
                     <div class="col-70">
                         <div class="row-mini d-flex">
                             <div class="col d-flex">
-                                <p>U.S. Price: </p><span>{{($single['price'])}}</span>
+                                <p>U.S. Price:</p><span>{{($single['price'])}}</span>
                             </div>
                             <div class="col d-flex justify-content-end">
                                 <p>AVAILABLE</p>
@@ -54,13 +54,62 @@
 {{-- INFO COMIC --}}
 
 <div class="container-gray">
-    <div class="row">
-        <div class="col">
-            ciao
+    <div class="container">
+        <div class="row p-5">
+            <div class="col">
+                <div>
+                    <h4>Talent</h4>
+                </div>
+                <div class="first-line d-flex justify-content-between align-self-baseline">
+                    <div class="col-30">
+                        <p>Art by:</p> 
+                    </div>
+                    <div class="col-70">
+                        <a href="#"> {{implode(', ', $single['artists'])}} </a>
+                    </div>
+                </div>
+                <div class="second-line d-flex justify-content-between align-self-baseline">
+                    <div class="col-30">
+                        <p>Written by:</p> 
+                    </div>
+                    <div class="col-70">
+                        <a href="#"> {{implode(', ', $single['writers'])}} </a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col">
+                <div>
+                    <h4>Specs</h4>
+                </div>
+                <div class="first-line d-flex justify-content-between align-self-baseline">
+                    <div class="col-30">
+                        <p>Series:</p> 
+                    </div>
+                    <div class="col-70">
+                        <a href="#"> {{$single['series']}} </a>
+                    </div>
+                </div>
+                <div class="second-line d-flex justify-content-between align-self-baseline">
+                    <div class="col-30">
+                        <p>U.S. Price:</p> 
+                    </div>
+                    <div class="col-70">
+                        <a href="#"> {{($single['price'])}}</a>
+                    </div>
+                </div>
+                <div class="second-line d-flex justify-content-between align-self-baseline">
+                    <div class="col-30">
+                        <p>On Sale Date:</p> 
+                    </div>
+                    <div class="col-70">
+                        <a href="#"> {{($single['sale_date'])}}</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-
 
 @endsection
 
