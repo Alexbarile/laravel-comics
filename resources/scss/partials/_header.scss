@@ -7,31 +7,29 @@
     width: 100%;
     background-color: $blue;
 
-    ul {
+    .menu {
         @include flex;
         @include j-end;
         @include a-center;
+        list-style-type: none;
         margin: 0;
         padding: 0;
 
-        li {
+        li a {
+            text-decoration: none;
             list-style-type: none;
             color: white;
             font-size: 12px;
             padding: 10px;
-            cursor: pointer;
+
+            &:hover {
+                color: black;
+            }
         }
     }
 }
 
-.jumbo {
-    height: 350px;
-    width: 100%;
-    background-image: url('/resources/img/jumbotron.jpg');
-    background-size: cover;
-}
-
-header {
+nav {
     width: 100%;
 
     ul {
@@ -47,7 +45,6 @@ header {
 
                 &.active,
                 &:hover {
-
                     color: $blue;
                     border-bottom: 5px solid $blue;
                     padding-bottom: 40px;
@@ -59,6 +56,17 @@ header {
                 text-align: right;
                 border-bottom: 2px solid #7979fd;
             }
+
+            .nav-link:hover {
+                color: $blue;
+            }
         }
     }
+}
+
+.jumbo {
+    height: 350px;
+    width: 100%;
+    background-image: url('/resources/img/jumbotron.jpg');
+    background-size: cover;
 }

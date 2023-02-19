@@ -88,11 +88,14 @@
 
                     .col-30 {
                         width: 30%;
-                    }
 
-                    span {
-                        color: $white;
-                        font-weight: 600;
+                        .nav-link {
+                            color: $white;
+
+                            &:hover {
+                                color: $yellow;
+                            }
+                        }
                     }
                 }
             }
